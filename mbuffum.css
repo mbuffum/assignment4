@@ -1,0 +1,282 @@
+/* INCREDIBLE BASIC CSS (wip!)*/
+/* gaze upon my incredible placeholder colors */
+
+body {
+  background-color: #252525;
+  font-size: 16px; /* usually the default size anyway*/
+  margin: 0;
+}
+
+a:link {
+  color: #2090C0;
+  text-decoration: none;
+}
+a:visited{
+    color: #2090C0;
+  text-decoration: none;
+}
+a:hover{
+    color: #20B0E0;
+  text-decoration: underline;
+}
+
+#topbox {
+  background-color: #0070A0;
+  height: 6.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+    text-align: center;
+  width: 100%;
+  z-index: 1000;
+}
+
+#topbox a{
+    text-decoration: none;
+}
+
+#classtitle{
+  background-color: white;
+  border-radius: 1em;
+  margin: 0.5em auto;
+  font-size: 1.4em;
+  width: 30em;
+}
+
+#studentInfo{
+  background-color: #DEDEDE;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+#studentInfo span{
+padding: 0 0.5em;
+}
+
+.greenDot{
+  background-color: green;
+  border-radius: 1em;
+  color: white;
+}
+
+.redDot{
+  background-color: red;
+  border-radius: 1em;
+  color: white;
+}
+
+#mainMenu {
+  background-color: #333;
+  font-size: 1em;
+    font-variant: small-caps;
+  letter-spacing: 0.1em;
+  padding: 0.1em;
+}
+
+#mainMenu ol {
+  margin: 0.5em;
+}
+
+#mainMenu li {
+  font-weight: bold;
+  display: inline-block;
+padding: 0 0.5em;
+}
+
+#mainMenu ol li[class~="activeLink"] {
+  background-color: white;
+  border-radius: 1em;
+}
+#mainMenu ol li[class~="activeLink"] a{
+  
+}
+
+article{
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  position: relative;
+   top: 7em;
+  margin: auto;
+width: 1300px;
+  max-width: 95%; /* 100% will cause a horizontal scroll bar, sadly*/
+}
+
+h1, h2, h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+article >h1, article > h2 {
+  margin-top: 0;
+}
+/* the above is the make sure there isn't too much white space at the top of the article */
+
+h1 {
+  border-bottom: 2px solid #0070A0;
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+
+p{
+  font-size: 1em;
+  margin-top: 0.25em;
+  margin-bottom: 0.75em;
+  line-height: 1.5em;
+}
+
+article li {
+  padding-top: 0.25em;
+}
+
+article li[class~="link"] figure a img, article li[class~="video"] figure a img {
+  width: 1.5em;
+} /* keeps those little pictures for links like you see on the Resources page at a reasonable size */
+article li[class~="link"] figure, article li[class~="video"] figure{
+  margin: 0.25em;
+} /* prevents the list of aforementioned links from having too much space between items */
+
+figure[class*="left"] {
+  float: left;
+} 
+figure[class*="right"] {
+  float: right;
+} 
+figure[class~="small"]{
+  width: 25%
+}
+figure[class~="small"] img{
+  width: 100%;
+}
+
+.highlightRed {
+  color: red;
+}
+
+/* FOR SYLLABUS PAGE: */
+
+#grading {
+  float: left;
+  padding: 1em;
+}
+
+/* FOR LECTURES PAGE: */
+
+.LecturesLink {
+  padding-left: 1em;
+}
+#lectures article .LecturesLink li {
+  list-style-type: none;
+  }
+
+/* TABLE FOR CALENDAR PAGE STARTS HERE */
+
+#vcalendar {
+  background-color: #AAA;
+  border: 1px solid black;border-collapse: collapse;
+  margin: auto; /* not needed when width is 100%, but this is in case you change the width*/
+  table-layout: fixed; /* helps keep every weekday the same width*/
+  width: 100%;
+  }
+
+#attendanceRow{
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Present {background-color: limegreen;}
+.Late {background-color: yellowgreen;}
+.Sick {background-color: yellow;}
+.Personal {background-color: orange}
+.Absent {background-color: orangered}
+.FreeDay {background-color: mediumvioletred;}
+
+#vcalendar .monthHeader {
+  background-color: #0070A0;
+  color: white;
+  font-variant: small-caps;
+  letter-spacing: 0.5em;
+}
+#vcalendar .header{
+  background-color: #333;
+  border: 1px solid black;
+  color: #DEDEDE;
+}
+#vcalendar .days {
+  background-color: #DEDEDE;
+  border: 1px solid black;
+  vertical-align: top; /* keeps date numbers where they should be!*/
+}
+
+#vcalendar .date{
+  font-weight: bold;
+  width: 1.5em; /* makes attendance color limited only to small area around date number */
+    text-align:center;
+}
+#vcalendar .Sat, #vcalendar .Sun {
+  background-color: #AAA;
+}
+#vcalendar .days:hover {
+  background-color: #ACE;
+}
+#vcalendar .event {
+  background-color: white;
+  margin: 0.25em;
+  padding: 0.25em 0.5em;
+}
+
+/* TABLE FOR SCHEDULE PAGE (ACCESSIBLE THROUGH CALENDAR PAGE) STARTS HERE */
+
+#schedule table {
+   background-color: white;
+  border-collapse: collapse;
+  margin-left: 1em;
+  max-width: 95%;
+  width: 50em;
+}
+#schedule tr th {
+  border-bottom: 2px solid black;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+#schedule tr  {
+  border-bottom: 1px dashed #AAA;
+}
+
+#schedule tr:hover {
+  background-color: #DEDEDE;
+}
+#schedule tr:first-child:hover {
+  background-color: white; /* to prevent row hover rule from affected table headings */
+}
+
+#schedule table tr td .days {
+  max-width: 10em;
+  min-width: 6em;
+}
+#schedule table tr td .topic {
+max-width: 25em;
+  min-width: 6em
+}
+#schedule table tr td .assignment {
+max-width: 10em;
+  min-width: 6em;
+}
+
+/* FOOTER CSS FOLLOWS */
+
+footer {
+  background-color: lightgrey;
+  margin: 2em auto;
+  padding: 0.25em 0.5em;
+  position: relative;
+  top: 7em; /* should be same as for article, of course*/
+  width: 90%;
+}
