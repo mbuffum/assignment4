@@ -280,3 +280,41 @@ footer {
   top: 7em; /* should be same as for article, of course*/
   width: 90%;
 }
+
+/* ADMIN MENU STYLING! It's not perfect, but it sorta works: */
+
+#adminColumn {
+  background-color: white;
+  border-top: 2px solid black;
+  font-size: 0.8em;
+  min-height: 3em;
+      position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1005;
+} /* This menu works best if you're viewing the page fullscreen! */
+
+#adminMenu ol {
+  margin: 0.25em;
+  padding-left: 0;
+}
+
+#adminMenu ol li{
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 0.5em;
+  text-transform: uppercase;
+  }
+
+#adminMenu ol li li {
+  font-weight: normal;
+  text-transform: none;
+}
+
+#adminColumn p {
+  font-size: 0.8em;
+  margin-right: 0.5em;
+  position: fixed;
+  bottom: 0;
+  right: 0;  
+}
