@@ -1,14 +1,64 @@
+/* PRINT STYLE SHEET */
+
 body {
   background-color: white;
   color: black;
   font: 12pt "Times New Roman", Times, TimesNR, serif;
 }
-nav, #studentInfo {
-  display: none;
-}
+
 a {
+  text-decoration: none;
   color: black
 }
-p a:before, li a:before {
-  content: "(link): ";
+
+
+#vcalendar {
+  border: 1px solid black;border-collapse: collapse;
+  margin: auto; /* not needed when width is 100%, but this is in case you change the width*/
+  table-layout: fixed; /* helps keep every weekday the same width*/
+  width: 91%;
+  font-size: .73em;
+  }
+
+#attendanceRow{
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#vcalendar .monthHeader {
+  color: white;
+  font-variant: small-caps;
+  letter-spacing: 0.5em;
+}
+#vcalendar .header{
+  border: 1px solid black;
+}
+#vcalendar .days {
+  border: 1px solid black;
+  vertical-align: top; /* keeps date numbers where they should be!*/
+}
+
+#vcalendar .date{
+  font-weight: bold;
+  width: 1.5em; /* makes attendance color limited only to small area around date number */
+   text-align:center;
+}
+
+
+
+#otherMedia ol li
+{
+   float: left;
+    width: 18em;
+  padding: .2em;
+  margin: .2em;
+  font-size: .6em
+  
+}
+
+#mainMenu, #grading, footer, img, head
+{
+  display: none;
 }
