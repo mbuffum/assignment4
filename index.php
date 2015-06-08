@@ -28,6 +28,9 @@
     </head>
     <body>
         <h1>Assignment 4</h1>
+        <p>
+            <a href="mbuffum.css">CSS</a> | <a href="print_mbuffum.css">Print CSS</a> | <a href="cs142-layout.JPG">Layout Pic</a> | <a href="https://rerickso.w3.uvm.edu/education/blackboard/syllabus.php?classRegNum=332">Class Site</a>
+        </p>
         <p>We weren't told what to put on our index page, so here are some screenshot previews of our site. <b>Click on the pictures to see them at full resolution!</b></p>
         <div id='pics'>
             <figure><a href='SyllabusPreview.png'><img src='SyllabusPreview.png'></a><figcaption>Syllabus Page</figcaption></figure>
@@ -37,6 +40,5 @@
             <figure><a href='ResourcesPreview.png'><img src='ResourcesPreview.png'></a><figcaption>Links on Resources Page</figcaption></figure>
             <figure><a href='PrintPreview.png'><img src='PrintPreview.png'></a><figcaption>Print Preview of Syllabus Page</figcaption></figure>
         </div>
-        <footer>Return to the <a href="../sitemap.php">sitemap</a> for the css files.</footer>
     </body>
 </html>
