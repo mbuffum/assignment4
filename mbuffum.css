@@ -1,5 +1,8 @@
-/* INCREDIBLE BASIC CSS (wip!)*/
-/* gaze upon my incredible placeholder colors */
+/* 
+    Created on : June 5, 2015, 11:20:00 PM
+    Author     : Emilie, Marina, Ivan
+*/
+
 
 body {
   background-color: #252525;
@@ -105,6 +108,8 @@ width: 1300px;
 h1, h2, h3 {
   margin-top: 1em;
   margin-bottom: 0.5em;
+  font-family: helvetica, arial, sans-serif;
+  text-shadow: 2px 2px #DEDEDE;
 }
 
 article >h1, article > h2 {
@@ -158,11 +163,39 @@ figure[class~="small"] img{
   color: red;
 }
 
+
+/* FOR SICK PAGE: */
+fieldset {
+	border-radius: 1em;
+}
+
+#txtComments {
+	border-radius: 1em;
+	background-color: yellowgreen;
+	height: 3em;
+	width: 62.5em;
+	font-size: 110%;
+	font-variant: small-caps;
+	margin-left: 1.2em;
+	max-width: 60.5em;
+}
+
+fieldset {
+	margin: 1.5em 0em 1.5em 0em;
+	border: 2px solid #d9d9d9;
+	}
+        
 /* FOR SYLLABUS PAGE: */
 
 #grading {
   float: left;
   padding: 1em;
+}
+
+img {
+	border-radius: 1em;
+	border: 2px solid #d9d9d9;
+	box-shadow: 5px 5px 2px #F2F2F2;
 }
 
 /* FOR LECTURES PAGE: */
@@ -279,6 +312,8 @@ footer {
   position: relative;
   top: 7em; /* should be same as for article, of course*/
   width: 90%;
+  border-radius: 1em;
+  font-family: helvetica;
 }
 
 /* ADMIN MENU STYLING! It's not perfect, but it sorta works: */
